@@ -1,0 +1,75 @@
+/* Style for Contact Us Form */
+.contact-form {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin: 0.5rem 0;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    background-color: #5D3FD3;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #4c2baf;
+  }
+
+  button {
+    font-size: 1.2rem;  /* Increase font size */
+    padding: 1rem 2rem; /* Increase padding (space inside button) */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #5D3FD3; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    
+  }
+  
+  /* To specifically style the 'Book Now' button */
+  .book-now-button {
+    font-size: 1.5rem;  /* Increase font size */
+    padding: 1.5rem 3rem; /* Bigger padding to make the button larger */
+    background-color: #4c2baf; /* Slightly darker shade for the button */
+    border-radius: 15px; /* More rounded corners */
+    margin: 20px auto; /* Center the button with a margin */
+    display: block; /* Make the button a block element */
+    
+  }
+  
+  /* Hover effect */
+  .book-now-button:hover {
+    background-color: #3e1f7b; /* Darker shade when the button is hovered */
+  }
+  

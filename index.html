@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookNest - Online Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BookNest</h1>
+    <input type="text" id="searchBar" placeholder="Search books...">
+  </header>
+
+  <div class="filters">
+    <label for="genreFilter">Filter by Genre: </label>
+    <select id="genreFilter">
+      <option value="All">All</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Romance">Romance</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Mystery">Mystery</option>
+      <option value="Self-Help">Self-Help</option>
+    </select>
+  </div>
+
+  <div class="books" id="bookList"></div>
+
+  <div id="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <p><strong>Total: ₹<span id="total">0</span></strong></p>
+  </div>
+
+  <script src="script.js"></script>
+  <button onclick="window.location.href='contact.html'">Book Now</button>
+
+</body>
+</html>

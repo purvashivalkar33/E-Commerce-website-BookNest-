@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - BookNest</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </header>
+
+  <div class="contact-form">
+    <h2>Book Delivery Details</h2>
+    <form id="deliveryForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+      
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" required>
+      
+      <label for="track">Track Delivery?</label>
+      <input type="checkbox" id="track" name="track">
+      
+      <div>
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="COD">Cash on Delivery</option>
+          <option value="Online">Online Payment</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // Handle form submission (You can store this information as required or send it to a server)
+    document.getElementById('deliveryForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Your order has been submitted! We will contact you shortly.');
+      // You can add the code to handle this data, like saving it or sending it to a backend server.
+    });
+  </script>
+
+</body>
+</html>
